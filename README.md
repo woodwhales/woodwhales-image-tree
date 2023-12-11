@@ -1,6 +1,6 @@
 # woodwhales-image-tree
 
-> 用于生成https://image.woodwhales.cn/图库的图片仓库配置文件：tree.json
+> 用于生成 https://image.woodwhales.cn/ 图库的图片仓库配置文件：tree.json
 >
 > 图库仓库地址：https://github.com/woodwhales/woodwhales_img_store
 
