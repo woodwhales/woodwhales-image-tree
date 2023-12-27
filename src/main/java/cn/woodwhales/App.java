@@ -2,6 +2,7 @@ package cn.woodwhales;
 
 import cn.hutool.core.io.FileUtil;
 import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson2.JSONWriter;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
@@ -68,7 +69,7 @@ public class App {
                 }
             }
         }
-        FileUtil.writeString(JSON.toJSONString(imageDtoList), new File(baseFilePath + File.separator + "tree.json"), UTF_8);
+        FileUtil.writeString(JSON.toJSONString(imageDtoList, JSONWriter.Feature.PrettyFormat), new File(baseFilePath + File.separator + "tree.json"), UTF_8);
         System.out.println("parse end");
     }
 }
